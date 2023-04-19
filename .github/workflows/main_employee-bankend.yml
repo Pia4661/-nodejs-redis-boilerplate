@@ -23,14 +23,14 @@ jobs:
       uses: docker/login-action@v1
       with:
         registry: https://index.docker.io/v1/
-        username: ${{ secrets.AzureAppService_ContainerUsername_0555ab54d8e04b0b9f3f726f117b9f6a }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_df858d71429a49a78427caffed89afd5 }}
+        username: ${{ secrets.AzureAppService_ContainerUsername_d757239882304a43858670e9c78dc841 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_960859356fa3442ea099cb0ec448dd6f }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_0555ab54d8e04b0b9f3f726f117b9f6a }}/nginx:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_d757239882304a43858670e9c78dc841 }}/mcr.microsoft.com/appsvc/staticsite:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'employee-bankend'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_90a73b755e95476da30422fd4c8c5f62 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_0555ab54d8e04b0b9f3f726f117b9f6a }}/nginx:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_384ea991bc364887a2e8759d0a19e23c }}
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_d757239882304a43858670e9c78dc841 }}/mcr.microsoft.com/appsvc/staticsite:${{ github.sha }}'
