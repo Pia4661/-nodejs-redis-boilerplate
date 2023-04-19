@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nuwan94/nodejs-redis-boilerplate.git"
+    "url": "git+https://github.com/Pia4661/-nodejs-redis-boilerplate.git"
   },
   "keywords": [
     "nodejs",
@@ -22,9 +22,9 @@
   "author": "nuwan94",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nuwan94/nodejs-redis-boilerplate/issues"
+    "url": "https://github.com/Pia4661/-nodejs-redis-boilerplate/issues"
   },
-  "homepage": "https://github.com/nuwan94/nodejs-redis-boilerplate#readme",
+  "homepage": "https://github.com/Pia4661/-nodejs-redis-boilerplate#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "cors": "^2.8.5",
