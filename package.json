@@ -7,7 +7,6 @@
     "dev": "nodemon server.js",
     "start": "node server.js",
     "prettier": "prettier --write ."
-   // "test": "mocha --recursive test"
   },
   "repository": {
     "type": "git",
