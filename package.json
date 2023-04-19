@@ -7,8 +7,7 @@
     "dev": "nodemon server.js",
     "start": "node server.js",
     "prettier": "prettier --write .",
-    "test": "mocha --recursive test"
-    "bump-version": "npm version patch"
+    "test": "mocha --recursive test",
   },
   "repository": {
     "type": "git",
