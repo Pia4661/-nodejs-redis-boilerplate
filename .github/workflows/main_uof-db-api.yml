@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'uof-db-api'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8BAFA3B72B94427E9F62CEE1DFAD7DD0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_16183BA3C4A44B7DAC033A2732AA09F4 }}
           package: .
