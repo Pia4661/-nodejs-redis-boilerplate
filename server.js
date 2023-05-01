@@ -24,7 +24,7 @@ const employeeRedisKey = "store:employees"; // cahce key for employeees
 const dataExpireTime = process.env.CACHE_PERIOD; // 1 hour cache expire time
 
 // main endpoint
-app.get("/", (req, res) =>
+app.get("/", (req, res) =>  res.send("✅ - UOF API working."));
   res.send("Welcome to Node.js + redis boilerplate API.")
 );
 
